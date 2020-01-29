@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>SuzuyoOhara | Links</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script>
+        function ani(){
+            document.getElementById('plane').className ='animation';
+        }
+        function anitwo(){
+            document.getElementById('bg').className ='animation2';
+        }
+        function check() {
+            document.form .submit();
+        }
+
+        (function($) {
+            $(function () {
+                $('#nav-toggle').on('click', function() {
+                    $('body').toggleClass('open');
+                });
+            });
+        })(jQuery);
+    </script>
+</head>
+<body>
+    <h1 class="head">Links</h1>
+    <div id="nav-toggle">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+    
+        <div id="gloval-nav">
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="item">Home</a></li>
+                    <li><a href="../about/index.html" class="item">About</a></li>
+                    <li><a href="../works/index.html" class="item">Works</a></li>
+                    <li><a href="../hobby/index.html" class="item">Hobby</a></li>
+                    <li><a href="./links/index.html" class="item">Links</a></li>
+                </ul>
+        </nav>
+    </div><!-- /#gloval-nav -->  
+
+    <a href="https://www.meiji.ac.jp/" class="link1 detail">明治大学</a>
+    <a href="http://www.ip.cs.meiji.ac.jp/" class="link2 detail">画像応用システム研究室</a>
+ 
+    <a href="https://tokyoryusei.org/" class="link3 detail">東京隆生吹奏楽団</a>
+    <a href="http://www.itasui.com/" class="link4 detail">板橋区吹奏楽団</a>
+    <a href="http://www.kisc.meiji.ac.jp/~meijiouendan/" class="link5 detail">明治大学応援団</a> 
+    <a href="https://nwjohp.wixsite.com/newwavejazzorchestra" class="link6 detail">明治大学NewWaveJazzOrchestra</a> 
+
+    <a href="https://www.edojo.jp/" class="link7 detail">江戸川女子中学校・高等学校</a>    
+
+</body>
+</html>
