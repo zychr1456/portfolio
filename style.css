@@ -124,7 +124,7 @@ body {
 	display:inline-block;
 	width:1em;
 	height:1em;
-	background:url("./Twitter_icon.png") no-repeat;
+	background:url("./sns_icon/Twitter.png") no-repeat;
 	background-size:contain;
 }
 .button:nth-of-type(2):before {
@@ -132,7 +132,7 @@ body {
 	display:inline-block;
 	width:1em;
 	height:1em;
-	background:url("./insta_icon.png") no-repeat;
+	background:url("./sns_icon/instagram.png") no-repeat;
 	background-size:contain;
 }
 .button:nth-of-type(3):before {
@@ -140,7 +140,7 @@ body {
 	display:inline-block;
 	width:1em;
 	height:1em;
-	background:url("./GitHub_icon.png") no-repeat;
+	background:url("./sns_icon/GitHub.png") no-repeat;
 	background-size:contain;
 }
 
@@ -149,7 +149,7 @@ body {
 display:inline-block;
 width:1em;
 height:1em;
-background:url("./hello,visits_icon.png") no-repeat;
+background:url("./sns_icon/hello,visits.png") no-repeat;
 background-size:contain;
 }
 
