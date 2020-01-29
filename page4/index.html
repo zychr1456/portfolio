@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>SuzuyoOhara | Hobby</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        <script>
+          $(".hover").mouseleave(function () {
+                $(this).removeClass("hover");
+          });
+          (function($) {
+            $(function () {
+              $('#nav-toggle').on('click', function() {
+                $('body').toggleClass('open');
+                });
+              });
+            })(jQuery);
+        </script>
+    </head>
+    <body>
+        <h1 class="head">Hobby</h1>
+
+        <figure class="snip1445">
+          <img src="./music.jpeg">
+          <figcaption>
+            <div>
+              <h2>Music</h2>
+              <h4>player</h4>
+            </div>
+          </figcaption>
+          <a href="#index1"></a>
+        </figure>
+        <figure class="snip1445">
+          <img src="./video.jpeg">
+          <figcaption>
+            <div>
+              <h2>Video</h2>
+              <h4>creator</h4>
+            </div>
+          </figcaption>
+          <a href="#index2"></a>
+        </figure>
+        <figure class="snip1445">
+          <img src="./dog1.jpg">
+          <figcaption>
+            <div>
+              <h2>Dog</h2>
+              <h4>lover</h4>
+            </div>
+          </figcaption>
+          <a href="#index3"></a>
+        </figure>
+
+        <div class="head-set">
+          <h2 id="index1">Music</h2>
+        </div>
+        <p class = "doc1">
+          Euphonium(ユーフォニアム)とTrombone(トロンボーン)を武器に、マルチプレイヤーとして演奏会や依頼演奏に出演。
+          音楽活動は4歳からだが、初めはわずか１年程でやめてしまう。しかし、10歳頃再び活動を再会し、今日で12年目になる。
+          高校時は団体では「全日本高等学校吹奏楽大会in横浜」に出場、個人では「全日本ジュニアクラシック音楽コンクール」の高校生の部で奨励賞を受賞する。
+          大学時では沢山の団体での活動や音楽文化の根強いスイスに留学を経て、音楽への知見を深める。現在所属している東京隆生吹奏楽団では「全日本吹奏楽コンクール」の一般の部で最高賞である金賞を受賞する。<br>
+          <br><br>
+          &emsp;- 経歴 -<br>
+          &emsp;江戸川女子吹奏楽部 前所属<br>
+          &emsp;明治大学応援団吹奏楽部 前所属<br>
+          &emsp;板橋区吹奏楽団 前所属<br>
+          &emsp;明治大学NewWaveJazzOrchestra 前所属<br>
+          &emsp;東京隆生吹奏楽団 現所属<br>
+          &emsp;東京清和吹奏楽団 現所属
+        </p>
+
+        <div class="cp_cssslider">
+          <div class="mask">
+          <ul>
+          <li><img src="./EGB.jpg">
+          <div class="tooltip"><h3>江戸川女子高校</h3></div></li>
+        
+          <li><img src="./ouenn.jpeg">
+          <div class="tooltip"><h3>明治大学応援団吹奏楽部</h3></div></li>
+        
+          <li><img src="./板吹.jpg">
+          <div class="tooltip"><h3>板橋区吹奏楽団</h3></div></li>
+        
+          <li><img src="./jazz.jpg">
+          <div class="tooltip"><h3>明治大学NewWaveJazzOrchestra</h3></div></li>
+        
+          <li><img src="./東京隆生.jpg">
+          <div class="tooltip"><h3>東京隆生吹奏楽団</h3></div></li>
+          </ul>
+          </div>
+          <div class="cp_progressbar"></div>
+        </div>
+
+        <div class="head-set">
+          <h2 id="index2">Video</h2>
+        </div>
+        <p class="doc2">
+          自身の関係者を被写体として、撮影/編集をしている。
+          映像制作に関心をもったきっかけは、高校時の部活で行われた演奏会である。
+          そこでは、映像を投影しながら演奏するという初めての試みをし、その際に使用する映像を制作したことによる。
+          その後も、イベント事がある度に制作をしプレゼントすることで、多くの反響を得た。
+          また、これらの活動が後に大学で情報科学を専攻する決め手となる。
+        </p>
+        <video width="600px" src="./demo.mp4" controls></video>
+        <div id="head-set">
+          <h2 id="index3">Dog</h2>
+        </div>
+        <p class="doc3">
+          私にとって目まぐるしい生活の疲れを和らげてくれる存在、それが愛犬である。
+          11歳の時から飼い始め、中高生という青春時代を共に過ごした。
+          現在は10歳を迎え、小型犬としては高齢犬に入る。薬を４種類も服用しなければならない状態だが、
+          そんな彼女を日々愛情もって世話をしている。
+        </p>
+        <img src="./charo.png" class="charo">
+        <div id="nav-toggle">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+          </div>
+        
+          <div id="gloval-nav">
+              <nav>
+                  <ul>
+                      <li><a href="#" class="item">Home</a></li>
+                      <li><a href="#" class="item">About</a></li>
+                      <li><a href="#" class="item">Works</a></li>
+                      <li><a href="#" class="item">Hobby</a></li>
+                      <li><a href="#" class="item">Contact</a></li>
+                  </ul>
+            </nav>
+          </div><!-- /#gloval-nav -->
+    </body>
+</html>

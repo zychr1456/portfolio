@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <meta charset="UTF-8">
+      <title>SuzuyoOhara | Home</title>
+      <link rel="stylesheet" href="./style.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+      <script>
+        (function($) {
+          $(function () {
+            $('#nav-toggle').on('click', function() {
+              $('body').toggleClass('open');
+              });
+            });
+          })(jQuery);
+      </script>
+  </head>
+  <body>
+      <div class="head1">小原 涼世</div>
+      <div class="head2">Welcome to My Page</div>
+
+      <div id="nav-toggle">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </div>
+    
+      <div id="gloval-nav">
+          <nav>
+              <ul>
+                  <li><a href="#" class="item">Home</a></li>
+                  <li><a href="#" class="item">About</a></li>
+                  <li><a href="#" class="item">Works</a></li>
+                  <li><a href="#" class="item">Hobby</a></li>
+                  <li><a href="#" class="item">Contact</a></li>
+              </ul>
+        </nav>
+      </div><!-- /#gloval-nav -->
+
+      <div id="sns">
+        <a href="https://twitter.com/chr_euptb" class="button"><span>Twitter</span></a>
+        <a href="https://www.instagram.com/zy____chr6/" class="button"><span>instagram</span></a>
+        <a href="https://vis-its.com/student/profile/10161109" class="button"><span>hello, visits</span></a>
+      </div>
+
+  </body>
+</html>

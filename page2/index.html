@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>SuzuyoOhara | About</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        <script>
+          (function($) {
+            $(function () {
+              $('#nav-toggle').on('click', function() {
+                $('body').toggleClass('open');
+                });
+              });
+            })(jQuery);
+        </script>
+    </head>
+    <body>
+        <h1 class="head">Profile</h1>
+        <img class = "PR" src="./PR.png">
+        <p>
+          <span class="name1">&nbsp;おはら&ensp;すずよ</span><br>
+          <span class="name2">小原&nbsp;涼世</span><br>
+          <br>
+          北海道札幌市で生まれ、東京で育つ。<br>
+          私立江戸川女子高等学校を卒業し、
+          現在、明治大学理工学部情報科学科に在籍中。来年度で４年生になる
+            。
+        </p>
+        <div id="nav-toggle">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+          </div>
+        
+          <div id="gloval-nav">
+              <nav>
+                  <ul>
+                      <li><a href="#" class="item">Home</a></li>
+                      <li><a href="#" class="item">About</a></li>
+                      <li><a href="#" class="item">Works</a></li>
+                      <li><a href="#" class="item">Hobby</a></li>
+                      <li><a href="#" class="item">Contact</a></li>
+                  </ul>
+            </nav>
+          </div><!-- /#gloval-nav -->
+    </body>
+</html>
