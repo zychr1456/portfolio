@@ -12,6 +12,7 @@ body {
     align-items: center;
     animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
+    font-family: sans-serif;
   } 
 @keyframes fadeIn {
   0% {opacity: 0}
