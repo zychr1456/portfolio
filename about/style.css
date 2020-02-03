@@ -12,6 +12,7 @@ body {
   align-items: center;
   animation: fadeIn 2s ease 0s 1 normal;
   -webkit-animation: fadeIn 2s ease 0s 1 normal;
+  font-family: 'Noto Serif JP', 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho',serif;
 }
 
 @keyframes fadeIn {
@@ -27,38 +28,40 @@ body {
 /* 表題設定 */
 .head {
   color: #00552e;
-  font-size: 60px;
+  font-size: 6vw;
   position: absolute;
-  top: 10px;
-  left: 200px;
+  top: 2vw;
+  left: 15vw;
 }
 
 /* プロフィール画像の位置設定 */
 .PR {
   position: absolute;
-  left: 250px;
-  top: 170px;
+  width: 30%;
+  height: auto;
+  left: 20vw;
+  top: 20vw;
 }
 
 /* 文書設定 */
 p {
   color: #444;
-  font-size: 20px;
+  font-size: 1.4vw;
   position: absolute;
-  left: 750px;
-  top: 350px;
-  width: 450px;
+  left: 55vw;
+  top: 33vw;
+  width: 35%;
 }
 
 /* 氏名(読み仮名)サイズ設定 */
 .name1 {
-  font-size: medium;
-  letter-spacing: 2px;
+  font-size: 1vw;
+  letter-spacing: 0.4vw;
 }
 
 /* 氏名(漢字)サイズ設定 */
 .name2 {
-  font-size: 30px;
+  font-size: 2.5vw;
 }
 
 /* ハンバーガーメニューの位置設定 */

@@ -12,7 +12,7 @@ body {
     align-items: center;
     animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
-    font-family: sans-serif;
+    font-family: 'Noto Serif JP', 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho',serif;
   } 
 @keyframes fadeIn {
   0% {opacity: 0}
@@ -26,17 +26,17 @@ body {
 /* 表題設定 */
 .head {
   color: #00552e;
-  font-size: 60px;
+  font-size: 6vw;
   position: absolute;
-  top: 10px;
-  left: 200px;
+  top: 2vw;
+  left: 15vw;
 }
 
 /* 勉強風景画像の位置設定 */
 img {
-  position: relative;
-  top: -20px;
-  left: 310px;
+  position: absolute;
+  top: 15vw;
+  left: 58vw;
   width: 30%;
   height: auto;
   z-index: -1;
@@ -45,40 +45,40 @@ img {
 /* 学習内容説明1の配置 */
 .doc1 {
   position: absolute;
-  left: 230px;
-  top: 200px;
-  width: 500px;
+  left: 15vw;
+  top: 20vw;
+  width: 40%;
 }
 
 /* 学習内容説明2の配置 */
 .doc2 {
   position: absolute;
-  left: 230px;
-  top: 450px;
-  width: 700px;
+  left: 15vw;
+  top: 37vw;
+  width: 70%;
 }
 
 /* 卒業研究内容説明の配置 */
 .doc3 {
   position: absolute;
-  left: 300px;
-  top: 880px;
-  width: 900px;
+  top: 77vw;
+  width: 60%;
+  margin: 0 auto;
 }
 
 /* 各文書のフォント設定 */
 p {
   color: #444;
-  font-size: 20px;
+  font-size: 1.4vw;
 }
 
 /* 見出しの設定 */
 #index {
   margin:  0;
-  font-size:  24px;
+  font-size:  4vw;
   position:  absolute;
-  top: 680px;
-  right: 200px;
+  top: 57vw;
+  right: 10vw;
   color: #674196;
   font-size: 70px;
   font-weight:  normal;
@@ -102,14 +102,9 @@ p {
   z-index:  -1;
 }
 
-/* 見出しの余白設定 */
-.head-set {
-  padding-bottom:  20px;
-}
-
 /* 研究題材名名拡大 */
 span {
-  font-size: larger;
+  font-size: 2vw;
 }
 
 /*「Thema」の文字の詳細設定 */
@@ -117,8 +112,8 @@ span {
   position: absolute ;
   font-weight: 200;
   font-size: 30px;
-  top: 800px;
-  left: 260px;
+  top: 68vw;
+  left: 17vw;
   line-height: 1.4;
   padding:0.25em 1em;
   display: inline-block;

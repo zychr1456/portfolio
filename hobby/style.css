@@ -12,6 +12,7 @@ body {
     align-items: center;
     animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
+    font-family: 'Noto Serif JP', 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho',serif;
 }
   
 @keyframes fadeIn {
@@ -27,24 +28,49 @@ body {
 /* 表題設定 */
 .head {
   color: #00552e;
-  font-size: 60px;
+  font-size: 6vw;
   position: absolute;
-  top: 10px;
-  left: 200px;
+  top: 2vw;
+  left: 15vw;
 }
 
 /* 趣味の種類である３つの画像の表示設定 */
-.snip1445 {
+.pic1 {
   font-family: 'Raleway', Arial, sans-serif;
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  top: -80px;
-  left: 20px;
+  top: 19vw;
+  left: 15%;
   margin: 10px;
   min-width: 230px;
   max-width: 315px;
   color: #ffffff;
-  text-align: center;
+  font-size: 16px;
+  background-color: #000000;
+}
+.pic2 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: absolute;
+  overflow: hidden;
+  top: 19vw;
+  left: 39%;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #000000;
+}
+.pic3 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: absolute;
+  overflow: hidden;
+  top: 19vw;
+  left: 63%;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  color: #ffffff;
   font-size: 16px;
   background-color: #000000;
 }
@@ -181,99 +207,100 @@ body {
   transition-delay: 0.15s;
 }
 
+/* 音楽活動についての欄 */
+#topic1 {  
+  width: 100vw;
+  height: 800px;
+  position: relative;
+  top: 85vw;
+  color: #444;
+  font-size: 1.4vw;
+}
+
 /*「Music」という見出しの設定 */
 #index1 {
-  margin:  0;
-  font-size:  24px;
-  position:  absolute;
-  top: 500px;
-  left: 550px;
   color: #674196;
   font-size: 70px;
   font-weight:  normal;
-  display:  inline-block;
   padding-top: 40px;
-  padding-left: 40px;
-  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-bottom: 0;
+  width: 250px;
+  margin: 0 auto;
 }
+
+/* 映像編集についての欄 */
+#topic2 {  
+  width: 100vw;
+  height: 800px;
+  color: #444;
+  font-size: 1.4vw;
+  position: relative;
+  top: 85vw;
+}
+
 /*「Video」という見出しの設定 */ 
 #index2 {
-  margin:  0;
-  font-size:  24px;
-  position:  absolute;
-  top: 1350px;
-  left: 550px;
   color: #674196;
   font-size: 70px;
   font-weight:  normal;
-  display:  inline-block;
   padding-top: 40px;
-  padding-left: 40px;
-  padding-bottom: 20px;
+  padding-left: 30px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* 愛犬についての欄 */
+#topic3 {  
+  width: 100vw;
+  height: 500px;
+  color: #444;
+  font-size: 1.4vw;
+  position: relative;
+  top: 85vw;
 }
 
 /*「Dog」という見出しの設定 */ 
 #index3 {
-  margin:  0;
-  font-size:  24px;
-  position:  absolute;
-  top: 2150px;
-  left: 550px;
   color: #674196;
   font-size: 70px;
   font-weight:  normal;
-  display:  inline-block;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 30px;
+  width: 250px;
+  margin: 0 auto;
 }
 
 /* 各見出しの装飾 */
-#index1:before,#index2:before,#index3:before {
+#index1:after,#index2:after,#index3:after {
   content:  '';
   background-color: #ffbf7f;
   display:  block;
-  position:  absolute;  
-  left: 0;
+  position:  relative;  
+  right: 30px;
   height: 70px;
   width: 70px;
   border-radius:  50%;
-  top: 20px;
+  bottom: 110px;
   z-index:  -1;
 }
 
-/* 各見出しの余白設定 */
-.head-set {
-  padding-bottom:  20px;
-}
-
 /* 音楽活動についての文書の位置設定 */
-.doc1 {
-  position: absolute;
-  top: 650px;
+.doc1{
+  width: 950px;
+  margin:  0 auto;
 }
 
 /* 映像制作についての文書の位置設定 */
 .doc2{
-  position: absolute;
-  top: 1500px;
+  width: 950px;
+  margin:  0 auto;
 }
 
 /* 愛犬についての文書の位置設定 */
 .doc3{
-  position: absolute;
-  top: 2300px;
-}
-
-
-
-/* 各文書のフォントと位置設定 */
-p {
-  color: #444;
-  font-size: 20px;
-  left: 230px;
   width: 950px;
-  display:block;
+  margin:  0 auto;
 }
 
 /* スライドショーの設定 */
@@ -292,8 +319,10 @@ p {
   margin:2em auto;
   overflow:visible;
   position: absolute;
-  top: 870px;
-  left: 700px;
+  top: 47%;
+  bottom: 0;
+  left: 30%;
+  right: 0;
 }
 
 /* 画像詳細設定 */
@@ -439,18 +468,18 @@ p {
 
 /* 動画の位置設定 */
 video{
-  position: absolute;
-  top: 1680px;
-  left: 430px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 2vw;
+  padding-left: 1.5vw;
 }
 
 /* 愛犬写真の位置設定 */
 .charo {
-  position: absolute;
-  top: 2440px;
-  left: 330px;
+  display: block;
   width: 800px;
   height: auto;
+  margin: 0 auto;
 }
 
 /* ハンバーガーメニューの位置設定 */
