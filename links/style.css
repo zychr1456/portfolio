@@ -1,3 +1,5 @@
+/* 背景設定 */
+/* コンテンツをフィードインさせる */
 body {
     background-color: rgb(239, 240, 242);
     background-image: url("./desk.png");
@@ -10,18 +12,17 @@ body {
     align-items: center;
     animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
-}
-  
+} 
 @keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
 }
-
 @-webkit-keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
 }
 
+/* 表題設定 */
 .head {
     color: #00552e;
     font-size: 60px;
@@ -30,33 +31,76 @@ body {
     left: 200px;
 }
 
-.PR {
+/* 各種リンク位置設定 */
+.link1 {
     position: absolute;
-    left: 250px;
-    top: 170px;
+    top: 200px;
+    left: 300px;
 }
-
-p {
-    color: #444;
-    font-size: 20px;
+.link2 {
     position: absolute;
-    left: 750px;
+    top: 250px;
+    left: 300px;
+}
+.link3 {
+    position: absolute;
+    top: 350px;
+    left: 300px;
+}
+.link4 {
+    position: absolute;
     top: 400px;
-    width: 450px;
+    left: 300px;
+}
+.link5 {
+    position: absolute;
+    top: 450px;
+    left: 300px;
+}
+.link6 {
+    position: absolute;
+    top: 500px;
+    left: 300px;
+}
+.link7 {
+    position: absolute;
+    top: 600px;
+    left: 300px;
 }
 
+/* 各種リンク詳細設定 */
+.detail{
+    font-size: 20px;
+	padding: 0.1em 0.3em 0em 0.3em;
+	background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(255,152,0,1) 50%);
+	background-position: 0 0;
+	background-size: auto 200%;
+	transition: .3s;
+	color: #ff9800;
+}
+
+/* リンクにカーソルを置いた時の挙動設定 */
+.detail:hover{
+	background-position: 0 100%;
+	color: #fff;
+}
+
+/* ハンバーガーメニューの位置設定 */
 #nav-toggle {
     position: fixed;
     top: 25px;
     right: 25px;
     height: 32px;
     cursor: pointer;
-}
-#nav-toggle > div {
+  }
+  /* ハンバーガーメニューの長さ設定 */
+  #nav-toggle > div {
     position: relative;
     width: 36px;
-}
-#nav-toggle span {
+  }
+  
+  /* ナビゲーションの設定 */
+  #nav-toggle span {
     width: 100%;
     height: 2px;
     left: 0;
@@ -64,52 +108,53 @@ p {
     background: #666;
     position: absolute;
     transition: transform 0.6s ease-in-out, top 0.5s ease;
-}
-#nav-toggle span:nth-child(1) {
+  }
+  
+  /* ハンバーガーメニューの各線分位置設定 */
+  #nav-toggle span:nth-child(1) {
     top: 0;
-}
-#nav-toggle span:nth-child(2) {
+  }
+  #nav-toggle span:nth-child(2) {
     top: 14px;
-}
-#nav-toggle span:nth-child(3) {
+  }
+  #nav-toggle span:nth-child(3) {
     top: 28px;
-}
-#nav-toggle:hover span:nth-child(1) {
+  }
+  
+  /* カーソルをハンバーガーメニューに置いた時の各線分位置設定 */
+  #nav-toggle:hover span:nth-child(1) {
     top: 4px;
-}
-#nav-toggle:hover span:nth-child(3) {
+  }
+  #nav-toggle:hover span:nth-child(3) {
     top: 23px;
-}
-
-.open #nav-toggle span {
+  }
+  
+  /* ハンバーガーメニュークリック時の設定 */
+  .open #nav-toggle span {
     background: #fff;
-}
-.open #nav-toggle span:nth-child(1) {
+  }
+  .open #nav-toggle span:nth-child(1) {
     top: 15px;
     transform: rotate(45deg);
-}
-.open #nav-toggle span:nth-child(2) {
+  }
+  .open #nav-toggle span:nth-child(2) {
     top: 15px;
     width: 0;
     left: 50%;
-}
-.open #nav-toggle span:nth-child(3) {
+  }
+  .open #nav-toggle span:nth-child(3) {
     top: 15px;
     transform: rotate(-45deg);
-}
-
-/* z-index */
-#nav-toggle {
+  }
+  
+  /* ハンバーガーメニューを常にページの手前におく */
+  #nav-toggle {
     z-index: 1000;
-}
-
-#container {
-    z-index: 900;
-}
-
-#gloval-nav {
+  }
+  
+  /* ナビゲーション設定 */
+  #gloval-nav {
     background: #000;
-    color: #fff;
     position: fixed;
     top: 0;
     left: 0;
@@ -125,46 +170,55 @@ p {
     font-size: 29px;
     opacity: 0;
     transition: opacity 0.6s ease, visibility 0.6s ease;
-}
-
-#gloval-nav a {
+  }
+  
+  /* ナビゲーション内コンテンツ設定 */
+  #gloval-nav a {
     display: block;
     color: #fff;
     text-decoration: none;
     padding: 10px 0;
     transition: color 0.6s ease;
-}
-#gloval-nav a:hover {
-    color: #999;
-}
-#gloval-nav ul {
+  }
+  
+  
+  
+  /* リスト内の各項目の先頭に表示されるマーカーを消す */
+  #gloval-nav ul {
     list-style: none;
-}
-#gloval-nav ul li {
+  }
+  
+  /* リストの出現方法設定 */
+  #gloval-nav ul li {
     opacity: 0;
     transform: translateX(200px);
     transition: transform 0.6s ease, opacity 0.2s ease;
-}
-#gloval-nav ul li:nth-child(2) {
+  }
+  
+  /* リスト出現の遅延 */
+  /* 各リストが順番に出現するようにしている */
+  #gloval-nav ul li:nth-child(2) {
     transition-delay: 0.15s;
-}
-#gloval-nav ul li:nth-child(3) {
+  }
+  #gloval-nav ul li:nth-child(3) {
     transition-delay: 0.3s;
-}
-#gloval-nav ul li:nth-child(4) {
+  }
+  #gloval-nav ul li:nth-child(4) {
     transition-delay: 0.45s;
-}
-#gloval-nav ul li:nth-child(5) {
+  }
+  #gloval-nav ul li:nth-child(5) {
     transition-delay: 0.6s;
-}
-#gloval-nav ul li:nth-child(6) {
+  }
+  #gloval-nav ul li:nth-child(6) {
     transition-delay: 0.75s;
-}
-#gloval-nav ul li:nth-child(7) {
+  }
+  #gloval-nav ul li:nth-child(7) {
     transition-delay: 0.9s;
-}
-
-nav li::after {
+  }
+  
+  
+  /* リストのアンダーバー設定(通常時には表示されない) */
+  nav li::after {
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -176,86 +230,28 @@ nav li::after {
     transform-origin: right top;
     transition: transform .3s;
   }
-nav li:hover::after {
+  
+  /* カーソルをナビゲーション内のリストに置いた時の設定 */
+  /*  1.色変化 */
+  #gloval-nav a:hover {
+    color: #999;
+  }
+  /*  2.アンダーバーの出現方法 */
+  nav li:hover::after {
     transform-origin: left top;
     transform: scale(1, 1);
-}
-
-nav a {
-    display: inline-block;
-    padding: 10px;
-    color: #66cdaa;
-    text-decoration: none;
-    transition: 0.2s;
-}
+  }
   
-/* open */
-.open {
+  /* ナビゲーション開示時の総合設定*/
+  .open {
     overflow: hidden;
-}
-.open #gloval-nav {
+  }
+  .open #gloval-nav {
     visibility: visible;
     opacity: 1;
-}
-.open #gloval-nav li {
+  }
+  .open #gloval-nav li {
     opacity: 1;
     transform: translateX(0);
     transition: transform 1s ease, opacity 0.9s ease;
-}
-
-.link1 {
-    position: absolute;
-    top: 200px;
-    left: 300px;
-}
-
-.link2 {
-    position: absolute;
-    top: 250px;
-    left: 300px;
-}
-
-.link3 {
-    position: absolute;
-    top: 350px;
-    left: 300px;
-}
-
-.link4 {
-    position: absolute;
-    top: 400px;
-    left: 300px;
-}
-
-.link5 {
-    position: absolute;
-    top: 450px;
-    left: 300px;
-}
-
-.link6 {
-    position: absolute;
-    top: 500px;
-    left: 300px;
-}
-
-.link7 {
-    position: absolute;
-    top: 600px;
-    left: 300px;
-}
-
-.detail{
-    font-size: 20px;
-	padding: 0.1em 0.3em 0em 0.3em;
-	background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(255,152,0,1) 50%);
-	background-position: 0 0;
-	background-size: auto 200%;
-	transition: .3s;
-	color: #ff9800;
-}
-
-.detail:hover{
-	background-position: 0 100%;
-	color: #fff;
-}
+  }

@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>SuzuyoOhara | Works</title>
-        <link rel="stylesheet" href="./style.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
-        <script>
-          (function($) {
-            $(function () {
-              $('#nav-toggle').on('click', function() {
-                $('body').toggleClass('open');
-                });
+  <head>
+      <meta charset="UTF-8">
+      <title>SuzuyoOhara | Works</title>
+      <link rel="stylesheet" href="./style.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+      <script>
+        // ハンバーガーメニュークリック時のナビゲーション制御
+        (function($) {
+          $(function () {
+            $('#nav-toggle').on('click', function() {
+              $('body').toggleClass('open');
               });
-            })(jQuery);
-        </script>
-    </head>
-    <body>
-        <h1 class="head">Works</h1>
-        <p class="doc1">
-          私が所属している学科(明治大学理工学部情報科学科)では、
-          情報科学の基礎から先端的な研究開発を段階的に学び、
-          ソフトウェア構築、Web構築、ネットワーク/サイバーセキュリティ、
-          回路設計、CGなどの情報科学に関する幅広い知識を総合的に学んできた。
-          近頃では、卒業研究に向けてDeepLeaningや音場シュミレーションと音空間レンダリング
-          についての勉学に励んでいる。<br>
-        </p>
-        <p class="doc2">
-          使用言語：C/C++, Java, Python, HTML/CSS, JavaScript(jQuery), Processing<br>
-          所属研究室：画像応用システム研究室(宮本龍介&nbsp;講師)<br>
-        </p>
+            });
+          })(jQuery);
+      </script>
+  </head>
+  <body>
+    <!-- 表題 -->
+    <h1 class="head">Works</h1>
 
-        <div class="head-set">
-          <h2 id="index">Graduate Research</h2>
-        </div>
-        <h1 class="thema">Thema</h1>
-        <p class="doc3">
-          <span>音声信号を入力として3D立体映像で表現するGUIの研究</span><br>
-          <br><br>
-          現在の立体音響を用いた音楽は概ねサウンド・アートと呼ばれる芸術のいち分野とされ、
-          その存在は私たちが認知する程普及してきた。
-          私はこれに目をつけ、この技術が実際にどう聞こえているのかを可視化することを研究テーマとした。
-          この研究による成果物で、音楽制作に携わる多くの人が容易に立体音響技術を利用して頂くというが狙いである。
-          <br><br><br><br><br><br><br>
-        </p>
-        <div id="nav-toggle">
-            <div>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-          </div>
-        
-          <div id="gloval-nav">
-              <nav>
-                <ul>
-                  <li><a href="../index.html" class="item">Home</a></li>
-                  <li><a href="../about/index.html" class="item">About</a></li>
-                  <li><a href="./index.html" class="item">Works</a></li>
-                  <li><a href="../hobby/index.html" class="item">Hobby</a></li>
-                  <li><a href="../links/index.html" class="item">Links</a></li>
-              </ul>
-            </nav>
-          </div><!-- /#gloval-nav -->
-    </body>
+    <!-- 学習内容説明1 -->
+    <p class="doc1">
+      私が所属している学科(明治大学理工学部情報科学科)では、
+      情報科学の基礎から先端的な研究開発を段階的に学び、
+      ソフトウェア構築、Web構築、ネットワークセキュリティ、
+      回路設計、CGなどの情報科学に関する幅広い知識を総合的に学んできた。
+      近頃では、卒業研究に向けてDeepLeaningや音場シミュレーションと音空間レンダリング
+      についての勉学に励んでいる。<br>
+    </p>
+
+    <!-- 学習内容説明2 -->
+    <p class="doc2">
+      使用言語：<br>C/C++, Java, Python, HTML/CSS, JavaScript(jQuery), Processing<br>
+      所属研究室：<br>画像応用システム研究室(宮本龍介&nbsp;講師)<br>
+    </p>
+
+    <!-- 勉強風景添付 -->
+    <img src="./Im_stuby.jpg">
+
+    <!-- 卒業研究内容説明 -->
+    <div class="head-set">
+      <h2 id="index">Graduate Research</h2>
+    </div>
+    <h1 class="thema">Thema</h1>
+    <p class="doc3">
+      <span>音声信号を入力として3D立体映像で表現するGUIの研究</span><br>
+      <br><br>
+      現在の立体音響を用いた音楽は概ねサウンド・アートと呼ばれる芸術のいち分野とされ、
+      その存在は私たちが認知する程普及してきた。
+      私はこれに目をつけ、この技術が実際にどう聞こえているのかを可視化することを研究テーマとした。
+      この研究による成果物で、音楽制作に携わる多くの人が容易に立体音響技術を利用して頂くというが狙いである。
+      <br><br><br><br><br><br><br>
+    </p>
+    
+
+    <!-- サイトのナビゲーション表示 -->
+    <div id="nav-toggle">
+      <div>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    </div>
+  
+    <div id="gloval-nav">
+        <nav>
+          <ul>
+            <li><a href="../index.html" class="item">Home</a></li>
+            <li><a href="../about/index.html" class="item">About</a></li>
+            <li><a href="./index.html" class="item">Works</a></li>
+            <li><a href="../hobby/index.html" class="item">Hobby</a></li>
+            <li><a href="../links/index.html" class="item">Links</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
 </html>

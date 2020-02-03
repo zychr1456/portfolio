@@ -8,6 +8,7 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"></script>
         <script>
+          // ハンバーガーメニュークリック時のナビゲーション制御
           (function($) {
             $(function () {
               $('#nav-toggle').on('click', function() {
@@ -18,17 +19,21 @@
         </script>
     </head>
     <body>
+        <!-- 表題 -->
         <h1 class="head">Profile</h1>
+        <!-- プロフィール画像 -->
         <img class = "PR" src="./PR.png">
         <p>
+          <!-- 氏名表示 -->
           <span class="name1">&nbsp;おはら&ensp;すずよ</span><br>
           <span class="name2">小原&nbsp;涼世</span><br>
           <br>
+          <!-- 概要 -->
           北海道札幌市で生まれ、東京で育つ。<br>
           私立江戸川女子高等学校を卒業し、
-          現在、明治大学理工学部情報科学科に在籍中。来年度で４年生になる
-            。
+          現在、明治大学理工学部情報科学科に在籍中。来年度で４年生になる。
         </p>
+        <!-- サイトのナビゲーション表示 -->
         <div id="nav-toggle">
             <div>
                 <span></span>
@@ -47,6 +52,6 @@
                       <li><a href="../links/index.html" class="item">Links</a></li>
                   </ul>
             </nav>
-          </div><!-- /#gloval-nav -->
+          </div>
     </body>
 </html>

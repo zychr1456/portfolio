@@ -1,3 +1,5 @@
+/* 背景設定 */
+/* コンテンツをフィードインさせる */
 body {
     background-color: rgb(239, 240, 242);
     background-image: url("./desk.png");
@@ -10,246 +12,277 @@ body {
     align-items: center;
     animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
-  }
-  
-  @keyframes fadeIn {
-    0% {opacity: 0}
-    100% {opacity: 1}
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {opacity: 0}
-    100% {opacity: 1}
-  }
-  
-  .head {
-    color: #00552e;
-    font-size: 60px;
-    position: absolute;
-    top: 10px;
-    left: 200px;
-  }
-  
-  .snip1445 {
-    font-family: 'Raleway', Arial, sans-serif;
-    position: relative;
-    overflow: hidden;
-    top: -80px;
-    left: 20px;
-    margin: 10px;
-    min-width: 230px;
-    max-width: 315px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 16px;
-    background-color: #000000;
-  }
-
-  .snip1445 *,
-  .snip1445 *:before,
-  .snip1445 *:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.55s ease;
-    transition: all 0.55s ease;
-  }
-  .snip1445 img {
-    max-width: 100%;
-    backface-visibility: hidden;
-    vertical-align: top;
-  }
-  .snip1445 figcaption {
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-    padding: 5px 10px 10px;
-  }
-  .snip1445 figcaption:before,
-  .snip1445 figcaption:after {
-    height: 2px;
-    width: 400px;
-    position: absolute;
-    content: '';
-    background-color: #ffffff;
-  }
-  .snip1445 figcaption:before {
-    top: 0;
-    left: 0;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-  .snip1445 figcaption:after {
-    bottom: 0;
-    right: 0;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-  .snip1445 figcaption div:before,
-  .snip1445 figcaption div:after {
-    width: 2px;
-    height: 300px;
-    position: absolute;
-    content: '';
-    background-color: #ffffff;
-  }
-  .snip1445 figcaption div:before {
-    top: 0;
-    left: 0;
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-  }
-  .snip1445 figcaption div:after {
-    bottom: 0;
-    right: 0;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-  .snip1445 h2,
-  .snip1445 h4 {
-    margin: 0;
-    text-transform: uppercase;
-  }
-  .snip1445 h2 {
-    font-weight: 400;
-  }
-  .snip1445 h4 {
-    display: block;
-    font-weight: 700;
-    background-color: #ffffff;
-    padding: 5px 10px;
-    color: #000000;
-  }
-  .snip1445 a {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  .snip1445:hover img,
-  .snip1445.hover img {
-    zoom: 1;
-    filter: alpha(opacity=50);
-    -webkit-opacity: 0.5;
-    opacity: 0.5;
-  }
-  .snip1445:hover figcaption:before,
-  .snip1445.hover figcaption:before,
-  .snip1445:hover figcaption:after,
-  .snip1445.hover figcaption:after,
-  .snip1445:hover figcaption div:before,
-  .snip1445.hover figcaption div:before,
-  .snip1445:hover figcaption div:after,
-  .snip1445.hover figcaption div:after {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  .snip1445:hover figcaption:before,
-  .snip1445.hover figcaption:before,
-  .snip1445:hover figcaption:after,
-  .snip1445.hover figcaption:after {
-    -webkit-transition-delay: 0.15s;
-    transition-delay: 0.15s;
-  }
-
-#index1 {
-  margin:  0;                 /* デフォルトCSS打ち消し */
-  font-size:  24px;           /* 文字サイズ指定 */
-  position:  absolute;        /* 位置調整 */
-  top: 500px;
-  left: 600px;
-  color: #674196;
-  font-size: 70px;            /* 文字サイズ指定 */
-  font-weight:  normal;       /* 文字の太さ調整 */
-  display:  inline-block;     /* インラインブロックにする */
-  padding-top: 40px;          /* 余白指定 */
-  padding-left: 40px;         /* 余白指定 */
-  padding-bottom: 20px;       /* 余白指定 */
 }
- 
-#index2 {
-  margin:  0;                 /* デフォルトCSS打ち消し */
-  font-size:  24px;           /* 文字サイズ指定 */
-  position:  absolute;        /* 位置調整 */
-  top: 1350px;
-  left: 600px;
-  color: #674196;
-  font-size: 70px;            /* 文字サイズ指定 */
-  font-weight:  normal;       /* 文字の太さ調整 */
-  display:  inline-block;     /* インラインブロックにする */
-  padding-top: 40px;          /* 余白指定 */
-  padding-left: 40px;         /* 余白指定 */
-  padding-bottom: 20px;       /* 余白指定 */
+  
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
 
-#index3 {
-  margin:  0;                 /* デフォルトCSS打ち消し */
-  font-size:  24px;           /* 文字サイズ指定 */
-  position:  absolute;        /* 位置調整 */
-  top: 2150px;
-  left: 600px;
-  color: #674196;
-  font-size: 70px;            /* 文字サイズ指定 */
-  font-weight:  normal;       /* 文字の太さ調整 */
-  display:  inline-block;     /* インラインブロックにする */
-  padding-top: 40px;          /* 余白指定 */
-  padding-left: 40px;         /* 余白指定 */
-  padding-bottom: 20px;       /* 余白指定 */
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
 
-#index1:before,#index2:before,#index3:before {
-  content:  '';               /* 空白の要素を作る */
-  background-color: #ffbf7f;  /* 背景色指定 */
-  display:  block;            /* ブロック要素にする */
-  position:  absolute;        /* 位置調整 */  
+/* 表題設定 */
+.head {
+  color: #00552e;
+  font-size: 60px;
+  position: absolute;
+  top: 10px;
+  left: 200px;
+}
+
+/* 趣味の種類である３つの画像の表示設定 */
+.snip1445 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  top: -80px;
+  left: 20px;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  background-color: #000000;
+}
+
+/* 趣味の種類である３つの画像内の線分の出現を滑らかにする(通常時は非表示) */
+.snip1445 *,
+.snip1445 *:before,
+.snip1445 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.55s ease;
+  transition: all 0.55s ease;
+}
+
+/* 趣味の種類である３つ画像のそれぞれの表示設定 */  
+.snip1445 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+/* 趣味の種類である３つ画像内コンテンツの位置設定 */
+.snip1445 figcaption {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  padding: 5px 10px 10px;
+}
+
+/* 趣味の種類である３つ画像内の横線装飾 */
+.snip1445 figcaption:before,
+.snip1445 figcaption:after {
+  height: 2px;
+  width: 400px;
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+
+/* 趣味の種類である３つ画像内の横線処理 */
+.snip1445 figcaption:before {
+  top: 0;
   left: 0;
-  height: 70px;               /* 高さ指定 */
-  width: 70px;                /* 幅指定 */
-  border-radius:  50%;        /* 丸くする */
-  top: 20px;                     /* 位置調整 */
-  z-index:  -1;               /* 重なり調整 */
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.snip1445 figcaption:after {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
+/* 趣味の種類である３つ画像内の縦線装飾 */
+.snip1445 figcaption div:before,
+.snip1445 figcaption div:after {
+  width: 2px;
+  height: 300px;
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+
+/* 趣味の種類である３つ画像内の縦線処理 */
+.snip1445 figcaption div:before {
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.snip1445 figcaption div:after {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* 趣味の種類である３つ画像内コンテンツの文字設定 */
+.snip1445 h2,
+.snip1445 h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* 趣味の種類である３つ画像内コンテンツの文字一段目の設定 */
+.snip1445 h2 {
+  font-weight: 400;
+}
+
+/* 趣味の種類である３つ画像内コンテンツの文字二段目の設定 */
+.snip1445 h4 {
+  display: block;
+  font-weight: 700;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  color: #000000;
+}
+
+/* ３つの趣味に飛ぶリンク元の場所設定 */
+.snip1445 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* 趣味の種類である３つ画像にカーソルを置いた時の挙動制御 */
+.snip1445:hover img,
+.snip1445.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+/* この時、縦線と横線を出現させるように制御しているが、*/
+/* 横線を縦線より0.15秒遅延させるデザインにしている。*/
+.snip1445:hover figcaption:before,
+.snip1445.hover figcaption:before,
+.snip1445:hover figcaption:after,
+.snip1445.hover figcaption:after,
+.snip1445:hover figcaption div:before,
+.snip1445.hover figcaption div:before,
+.snip1445:hover figcaption div:after,
+.snip1445.hover figcaption div:after {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.snip1445:hover figcaption:before,
+.snip1445.hover figcaption:before,
+.snip1445:hover figcaption:after,
+.snip1445.hover figcaption:after {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+/*「Music」という見出しの設定 */
+#index1 {
+  margin:  0;
+  font-size:  24px;
+  position:  absolute;
+  top: 500px;
+  left: 550px;
+  color: #674196;
+  font-size: 70px;
+  font-weight:  normal;
+  display:  inline-block;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+/*「Video」という見出しの設定 */ 
+#index2 {
+  margin:  0;
+  font-size:  24px;
+  position:  absolute;
+  top: 1350px;
+  left: 550px;
+  color: #674196;
+  font-size: 70px;
+  font-weight:  normal;
+  display:  inline-block;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+/*「Dog」という見出しの設定 */ 
+#index3 {
+  margin:  0;
+  font-size:  24px;
+  position:  absolute;
+  top: 2150px;
+  left: 550px;
+  color: #674196;
+  font-size: 70px;
+  font-weight:  normal;
+  display:  inline-block;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+/* 各見出しの装飾 */
+#index1:before,#index2:before,#index3:before {
+  content:  '';
+  background-color: #ffbf7f;
+  display:  block;
+  position:  absolute;  
+  left: 0;
+  height: 70px;
+  width: 70px;
+  border-radius:  50%;
+  top: 20px;
+  z-index:  -1;
+}
+
+/* 各見出しの余白設定 */
 .head-set {
-  padding-bottom:  20px;/* 余白指定 */
+  padding-bottom:  20px;
 }
 
+/* 音楽活動についての文書の位置設定 */
 .doc1 {
   position: absolute;
   top: 650px;
-  left: 250px;
 }
 
+/* 映像制作についての文書の位置設定 */
 .doc2{
   position: absolute;
   top: 1500px;
-  left: 250px;
 }
 
+/* 愛犬についての文書の位置設定 */
 .doc3{
   position: absolute;
   top: 2300px;
-  left: 250px;
 }
 
-video{
-  position: absolute;
-  top: 1680px;
-  left: 430px;
-}
 
+
+/* 各文書のフォントと位置設定 */
 p {
   color: #444;
   font-size: 20px;
-  left: 250px;
+  left: 230px;
   width: 950px;
   display:block;
 }
 
+/* スライドショーの設定 */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+/* フレーム設定 */
 .cp_cssslider {
   background:#cccccc;
   border: 8px solid #ffffff;
@@ -263,21 +296,28 @@ p {
   left: 700px;
 }
 
+/* 画像詳細設定 */
 .cp_cssslider img {
   max-width: 150%;
   vertical-align: top;
 }
 
-.cp_cssslider .mask {
-  overflow:hidden;
-  height:300px;/* ボーダー分を差し引く */
-}
+
+/* 画像がフレームにはみ出ないようにする */
 .cp_cssslider ul {
   margin:0;
   padding:0;
   position:relative;
 }
-/* tooltip */
+
+/* ツールチップ設定 */
+/* ツールチップがフレーム外で隠れるようにする */
+.cp_cssslider .mask {
+  overflow:hidden;
+  height:300px;
+}
+
+/* ツールチップ詳細設定 */
 .cp_cssslider .tooltip {
   background:#00552e;
   opacity: 0.8;
@@ -289,14 +329,19 @@ p {
   -webkit-transition:all 0.2s ease-in-out;
   transition:all 0.2s ease-in-out;
 }
+
+/* ツールチップ内文字設定 */
 .cp_cssslider .tooltip h3 {
   color:#fff;
   padding:0 0 0 20px;
 }
+
+/* 画像にカーソルを置いた時、ツールチップが出現するようにする */
 .cp_cssslider li:hover .tooltip{
   left:0px;
 }
 
+/* 画像がフレームに収まるようにする */
 .cp_cssslider li {
   width:300px;
   height:200px;
@@ -304,6 +349,8 @@ p {
   top:-200px;
   list-style:none;
 }
+
+/* 画像のスライド挙動設定 */
 .cp_cssslider li:nth-child(1){
   -webkit-animation:cycle1 25s linear infinite;
   animation:cycle1 30s linear infinite;
@@ -334,8 +381,8 @@ p {
   92% { top:-200px; opacity:0; z-index:0; }
   96% { top:-200px; opacity:0; }
   100%{ top:0px; opacity:1; }
-  }
-  @keyframes cycle2 {
+}
+@keyframes cycle2 {
   0%  { top:-200px; opacity:0; }
   16% { top:-200px; opacity:0; }
   20% { top:0px; opacity:1; }
@@ -344,8 +391,8 @@ p {
   40% { top:200px; opacity:0; z-index:0; }
   41% { top:-200px; opacity:0; z-index:-1; }
   100%{ top:-200px; opacity:0; z-index:-1; }
-  }
-  @keyframes cycle3 {
+}
+@keyframes cycle3 {
   0%  { top:-200px; opacity:0; }
   36% { top:-200px; opacity:0; }
   40% { top:0px; opacity:1; }
@@ -354,8 +401,8 @@ p {
   60% { top:200px; opacity:0; z-index:0; }
   61% { top:-200px; opacity:0; z-index:-1; }
   100%{ top:-200px; opacity:0; z-index:-1; }
-  }
-  @keyframes cycle4 {
+}
+@keyframes cycle4 {
   0%  { top:-200px; opacity:0; }
   56% { top:-200px; opacity:0; }
   60% { top:0px; opacity:1; }
@@ -364,26 +411,25 @@ p {
   80% { top:200px; opacity:0; z-index:0; }
   81% { top:-200px; opacity:0; z-index:-1; }
   100%{ top:-200px; opacity:0; z-index:-1; }
-  }
-  @keyframes cycle5 {
+}
+@keyframes cycle5 {
   0%  { top:-200px; opacity:0; }
   76% { top:-200px; opacity:0; }
   80% { top:0px; opacity:1; }
   84% { top:0px; opacity:1; }
   96% { top:0px; opacity:1; z-index:0; }
   100%{ top:200px; opacity:0; z-index:0; }
-  }
-/* progressbar */
+}
+/* 今写っている画像があとどれぐらい維持するかを表示 */
 .cp_progressbar {
   position:relative;
   top:-5px;
   width:680px;
   height:5px;
-  background: #7aff7a;
+  background: white;
   -webkit-animation:progressbar 30s ease-out infinite;
   animation:progressbar 30s ease-out infinite;
 }
-/* animation */
 @keyframes progressbar {
   0%, 20%, 40%, 60%, 80%, 100% { width:0%; opacity:0; }
   4%, 24%, 44%, 64%, 84% { width:0%; opacity:0.3; }
@@ -391,6 +437,14 @@ p {
   18%, 38%, 58%, 78%, 98% { width:100%; opacity:0; }
 }
 
+/* 動画の位置設定 */
+video{
+  position: absolute;
+  top: 1680px;
+  left: 430px;
+}
+
+/* 愛犬写真の位置設定 */
 .charo {
   position: absolute;
   top: 2440px;
@@ -399,6 +453,7 @@ p {
   height: auto;
 }
 
+/* ハンバーガーメニューの位置設定 */
 #nav-toggle {
   position: fixed;
   top: 25px;
@@ -406,10 +461,13 @@ p {
   height: 32px;
   cursor: pointer;
 }
+/* ハンバーガーメニューの長さ設定 */
 #nav-toggle > div {
   position: relative;
   width: 36px;
 }
+
+/* ナビゲーションの設定 */
 #nav-toggle span {
   width: 100%;
   height: 2px;
@@ -419,6 +477,8 @@ p {
   position: absolute;
   transition: transform 0.6s ease-in-out, top 0.5s ease;
 }
+
+/* ハンバーガーメニューの各線分位置設定 */
 #nav-toggle span:nth-child(1) {
   top: 0;
 }
@@ -428,6 +488,8 @@ p {
 #nav-toggle span:nth-child(3) {
   top: 28px;
 }
+
+/* カーソルをハンバーガーメニューに置いた時の各線分位置設定 */
 #nav-toggle:hover span:nth-child(1) {
   top: 4px;
 }
@@ -435,6 +497,7 @@ p {
   top: 23px;
 }
 
+/* ハンバーガーメニュークリック時の設定 */
 .open #nav-toggle span {
   background: #fff;
 }
@@ -452,18 +515,14 @@ p {
   transform: rotate(-45deg);
 }
 
-/* z-index */
+/* ハンバーガーメニューを常にページの手前におく */
 #nav-toggle {
   z-index: 1000;
 }
 
-#container {
-  z-index: 900;
-}
-
+/* ナビゲーション設定 */
 #gloval-nav {
   background: #000;
-  color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -481,6 +540,7 @@ p {
   transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
+/* ナビゲーション内コンテンツ設定 */
 #gloval-nav a {
   display: block;
   color: #fff;
@@ -488,17 +548,23 @@ p {
   padding: 10px 0;
   transition: color 0.6s ease;
 }
-#gloval-nav a:hover {
-  color: #999;
-}
+
+
+
+/* リスト内の各項目の先頭に表示されるマーカーを消す */
 #gloval-nav ul {
   list-style: none;
 }
+
+/* リストの出現方法設定 */
 #gloval-nav ul li {
   opacity: 0;
   transform: translateX(200px);
   transition: transform 0.6s ease, opacity 0.2s ease;
 }
+
+/* リスト出現の遅延 */
+/* 各リストが順番に出現するようにしている */
 #gloval-nav ul li:nth-child(2) {
   transition-delay: 0.15s;
 }
@@ -518,6 +584,8 @@ p {
   transition-delay: 0.9s;
 }
 
+
+/* リストのアンダーバー設定(通常時には表示されない) */
 nav li::after {
   position: absolute;
   bottom: -4px;
@@ -530,20 +598,19 @@ nav li::after {
   transform-origin: right top;
   transition: transform .3s;
 }
+
+/* カーソルをナビゲーション内のリストに置いた時の設定 */
+/*  1.色変化 */
+#gloval-nav a:hover {
+  color: #999;
+}
+/*  2.アンダーバーの出現方法 */
 nav li:hover::after {
   transform-origin: left top;
   transform: scale(1, 1);
 }
 
-nav a {
-  display: inline-block;
-  padding: 10px;
-  color: #66cdaa;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-/* open */
+/* ナビゲーション開示時の総合設定*/
 .open {
   overflow: hidden;
 }

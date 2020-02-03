@@ -1,3 +1,5 @@
+/* 背景設定 */
+/* コンテンツをフィードインさせる */
 body {
     background-image: url("./top.png");
     background-size: cover;
@@ -11,17 +13,16 @@ body {
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
     z-index: -1;
 }
-
 @keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
 }
-
 @-webkit-keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
 }
 
+/* 表題設定 */
 .head1 {
     color: white;
     font-size: 40px;
@@ -37,6 +38,7 @@ body {
     left: 100px;
 }
 
+/* snsアイコン位置と挙動設定 */
 #sns {
   display: inline-block;
   position:fixed;
@@ -47,8 +49,7 @@ body {
   transform:translate(-50%,-50%);
 }
 
-/* Icons */
-
+/* snsアイコンデザイン */
 .button {
   color:#fff;
   background: #DB6E82;
@@ -66,15 +67,15 @@ body {
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   transition: all .5s;
-   -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
+/* snsアイコンにカーソルを置いた時の色 */
 .button:hover {
   background: #ef92a3;
 }
 
-/* pop-up text */
-
+/* ポップアップするテキストのデザイン */
 .button span {
   color:#666;
   position:absolute;
@@ -94,9 +95,6 @@ body {
   -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
-/* pop-up text arrow */
-
 .button span:before {
   content:'';
   width: 0; 
@@ -109,18 +107,16 @@ body {
   left:40px;
 }
 
-/* text pops up when icon is in hover state */
-
+/* snsアイコンにカーソルを置いた時のポップアップの挙動制御 */
 .button:hover span {
   bottom:50px;
   visibility:visible;
   opacity:1;
 }
 
-/* font awesome icons */
-
+/* snsアイコン内の画像デザイン */
 .button:nth-of-type(1):before {
-    content:"";
+  content:"";
 	display:inline-block;
 	width:1em;
 	height:1em;
@@ -128,7 +124,7 @@ body {
 	background-size:contain;
 }
 .button:nth-of-type(2):before {
-    content:"";
+  content:"";
 	display:inline-block;
 	width:1em;
 	height:1em;
@@ -136,23 +132,23 @@ body {
 	background-size:contain;
 }
 .button:nth-of-type(3):before {
-    content:"";
+  content:"";
 	display:inline-block;
 	width:1em;
 	height:1em;
 	background:url("./sns_icon/GitHub.png") no-repeat;
 	background-size:contain;
 }
-
 .button:nth-of-type(4):before {
   content:"";
-display:inline-block;
-width:1em;
-height:1em;
-background:url("./sns_icon/hello,visits.png") no-repeat;
-background-size:contain;
+  display:inline-block;
+  width:1em;
+  height:1em;
+  background:url("./sns_icon/hello,visits.png") no-repeat;
+  background-size:contain;
 }
 
+/* ハンバーガーメニューの位置設定 */
 #nav-toggle {
   position: fixed;
   top: 25px;
@@ -160,10 +156,13 @@ background-size:contain;
   height: 32px;
   cursor: pointer;
 }
+/* ハンバーガーメニューの長さ設定 */
 #nav-toggle > div {
   position: relative;
   width: 36px;
 }
+
+/* ナビゲーションの設定 */
 #nav-toggle span {
   width: 100%;
   height: 2px;
@@ -173,6 +172,8 @@ background-size:contain;
   position: absolute;
   transition: transform 0.6s ease-in-out, top 0.5s ease;
 }
+
+/* ハンバーガーメニューの各線分位置設定 */
 #nav-toggle span:nth-child(1) {
   top: 0;
 }
@@ -182,6 +183,8 @@ background-size:contain;
 #nav-toggle span:nth-child(3) {
   top: 28px;
 }
+
+/* カーソルをハンバーガーメニューに置いた時の各線分位置設定 */
 #nav-toggle:hover span:nth-child(1) {
   top: 4px;
 }
@@ -189,6 +192,7 @@ background-size:contain;
   top: 23px;
 }
 
+/* ハンバーガーメニュークリック時の設定 */
 .open #nav-toggle span {
   background: #fff;
 }
@@ -206,18 +210,14 @@ background-size:contain;
   transform: rotate(-45deg);
 }
 
-/* z-index */
+/* ハンバーガーメニューを常にページの手前におく */
 #nav-toggle {
   z-index: 1000;
 }
 
-#container {
-  z-index: 900;
-}
-
+/* ナビゲーション設定 */
 #gloval-nav {
   background: #000;
-  color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -235,6 +235,7 @@ background-size:contain;
   transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
+/* ナビゲーション内コンテンツ設定 */
 #gloval-nav a {
   display: block;
   color: #fff;
@@ -242,17 +243,23 @@ background-size:contain;
   padding: 10px 0;
   transition: color 0.6s ease;
 }
-#gloval-nav a:hover {
-  color: #999;
-}
+
+
+
+/* リスト内の各項目の先頭に表示されるマーカーを消す */
 #gloval-nav ul {
   list-style: none;
 }
+
+/* リストの出現方法設定 */
 #gloval-nav ul li {
   opacity: 0;
   transform: translateX(200px);
   transition: transform 0.6s ease, opacity 0.2s ease;
 }
+
+/* リスト出現の遅延 */
+/* 各リストが順番に出現するようにしている */
 #gloval-nav ul li:nth-child(2) {
   transition-delay: 0.15s;
 }
@@ -272,6 +279,8 @@ background-size:contain;
   transition-delay: 0.9s;
 }
 
+
+/* リストのアンダーバー設定(通常時には表示されない) */
 nav li::after {
   position: absolute;
   bottom: -4px;
@@ -284,19 +293,19 @@ nav li::after {
   transform-origin: right top;
   transition: transform .3s;
 }
+
+/* カーソルをナビゲーション内のリストに置いた時の設定 */
+/*  1.色変化 */
+#gloval-nav a:hover {
+  color: #999;
+}
+/*  2.アンダーバーの出現方法 */
 nav li:hover::after {
   transform-origin: left top;
   transform: scale(1, 1);
 }
-nav a {
-  display: inline-block;
-  padding: 10px;
-  color: #66cdaa;
-  text-decoration: none;
-  transition: 0.2s;
-}
 
-/* open */
+/* ナビゲーション開示時の総合設定*/
 .open {
   overflow: hidden;
 }

@@ -1,3 +1,5 @@
+/* 背景設定 */
+/* コンテンツをフィードインさせる */
 body {
   background-color: #ececec;
   background-image: url("./desk.png");
@@ -22,6 +24,7 @@ body {
   100% {opacity: 1}
 }
 
+/* 表題設定 */
 .head {
   color: #00552e;
   font-size: 60px;
@@ -30,12 +33,14 @@ body {
   left: 200px;
 }
 
+/* プロフィール画像の位置設定 */
 .PR {
   position: absolute;
   left: 250px;
   top: 170px;
 }
 
+/* 文書設定 */
 p {
   color: #444;
   font-size: 20px;
@@ -45,15 +50,18 @@ p {
   width: 450px;
 }
 
+/* 氏名(読み仮名)サイズ設定 */
 .name1 {
   font-size: medium;
   letter-spacing: 2px;
 }
 
+/* 氏名(漢字)サイズ設定 */
 .name2 {
   font-size: 30px;
 }
 
+/* ハンバーガーメニューの位置設定 */
 #nav-toggle {
   position: fixed;
   top: 25px;
@@ -61,10 +69,13 @@ p {
   height: 32px;
   cursor: pointer;
 }
+/* ハンバーガーメニューの長さ設定 */
 #nav-toggle > div {
   position: relative;
   width: 36px;
 }
+
+/* ナビゲーションの設定 */
 #nav-toggle span {
   width: 100%;
   height: 2px;
@@ -74,6 +85,8 @@ p {
   position: absolute;
   transition: transform 0.6s ease-in-out, top 0.5s ease;
 }
+
+/* ハンバーガーメニューの各線分位置設定 */
 #nav-toggle span:nth-child(1) {
   top: 0;
 }
@@ -83,6 +96,8 @@ p {
 #nav-toggle span:nth-child(3) {
   top: 28px;
 }
+
+/* カーソルをハンバーガーメニューに置いた時の各線分位置設定 */
 #nav-toggle:hover span:nth-child(1) {
   top: 4px;
 }
@@ -90,6 +105,7 @@ p {
   top: 23px;
 }
 
+/* ハンバーガーメニュークリック時の設定 */
 .open #nav-toggle span {
   background: #fff;
 }
@@ -107,18 +123,14 @@ p {
   transform: rotate(-45deg);
 }
 
-/* z-index */
+/* ハンバーガーメニューを常にページの手前におく */
 #nav-toggle {
   z-index: 1000;
 }
 
-#container {
-  z-index: 900;
-}
-
+/* ナビゲーション設定 */
 #gloval-nav {
   background: #000;
-  color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -136,6 +148,7 @@ p {
   transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
+/* ナビゲーション内コンテンツ設定 */
 #gloval-nav a {
   display: block;
   color: #fff;
@@ -143,17 +156,23 @@ p {
   padding: 10px 0;
   transition: color 0.6s ease;
 }
-#gloval-nav a:hover {
-  color: #999;
-}
+
+
+
+/* リスト内の各項目の先頭に表示されるマーカーを消す */
 #gloval-nav ul {
   list-style: none;
 }
+
+/* リストの出現方法設定 */
 #gloval-nav ul li {
   opacity: 0;
   transform: translateX(200px);
   transition: transform 0.6s ease, opacity 0.2s ease;
 }
+
+/* リスト出現の遅延 */
+/* 各リストが順番に出現するようにしている */
 #gloval-nav ul li:nth-child(2) {
   transition-delay: 0.15s;
 }
@@ -173,6 +192,8 @@ p {
   transition-delay: 0.9s;
 }
 
+
+/* リストのアンダーバー設定(通常時には表示されない) */
 nav li::after {
   position: absolute;
   bottom: -4px;
@@ -186,20 +207,18 @@ nav li::after {
   transition: transform .3s;
 }
 
+/* カーソルをナビゲーション内のリストに置いた時の設定 */
+/*  1.色変化 */
+#gloval-nav a:hover {
+  color: #999;
+}
+/*  2.アンダーバーの出現方法 */
 nav li:hover::after {
   transform-origin: left top;
   transform: scale(1, 1);
 }
 
-nav a {
-  display: inline-block;
-  padding: 10px;
-  color: #66cdaa;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-/* open */
+/* ナビゲーション開示時の総合設定*/
 .open {
   overflow: hidden;
 }

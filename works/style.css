@@ -1,3 +1,5 @@
+/* 背景設定 */
+/* コンテンツをフィードインさせる */
 body {
     background-color: rgb(239, 240, 242);
     background-image: url("./desk.png");
@@ -10,18 +12,17 @@ body {
     align-items: center;
     animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
-  }
-  
+  } 
 @keyframes fadeIn {
   0% {opacity: 0}
   100% {opacity: 1}
 }
-
 @-webkit-keyframes fadeIn {
   0% {opacity: 0}
   100% {opacity: 1}
 }
 
+/* 表題設定 */
 .head {
   color: #00552e;
   font-size: 60px;
@@ -30,81 +31,99 @@ body {
   left: 200px;
 }
 
-.PR {
-  position: absolute;
-  left: 250px;
-  top: 170px;
+/* 勉強風景画像の位置設定 */
+img {
+  position: relative;
+  top: -20px;
+  left: 310px;
+  width: 30%;
+  height: auto;
+  z-index: -1;
 }
 
-#index {
-  margin:  0;                 /* デフォルトCSS打ち消し */
-  font-size:  24px;           /* 文字サイズ指定 */
-  position:  absolute;        /* 位置調整 */
-  top: 580px;
-  left: 600px;
-  color: #674196;
-  font-size: 70px;            /* 文字サイズ指定 */
-  font-weight:  normal;       /* 文字の太さ調整 */
-  display:  inline-block;     /* インラインブロックにする */
-  padding-top: 40px;          /* 余白指定 */
-  padding-left: 40px;         /* 余白指定 */
-  padding-bottom: 20px;       /* 余白指定 */
-}
-
-#index:before {
-  content:  '';               /* 空白の要素を作る */
-  background-color: #ffbf7f;  /* 背景色指定 */
-  display:  block;            /* ブロック要素にする */
-  position:  absolute;        /* 位置調整 */  
-  left: 510px;
-  height: 100px;               /* 高さ指定 */
-  width: 100px;                /* 幅指定 */
-  border-radius:  50%;        /* 丸くする */
-  top: 0px;                     /* 位置調整 */
-  z-index:  -1;               /* 重なり調整 */
-}
-
-
-.head-set {
-  padding-bottom:  20px;/* 余白指定 */
-}
-
+/* 学習内容説明1の配置 */
 .doc1 {
   position: absolute;
-  left: 250px;
+  left: 230px;
   top: 200px;
   width: 500px;
 }
 
+/* 学習内容説明2の配置 */
 .doc2 {
   position: absolute;
-  left: 250px;
+  left: 230px;
   top: 450px;
   width: 700px;
 }
 
+/* 卒業研究内容説明の配置 */
 .doc3 {
   position: absolute;
   left: 300px;
-  top: 800px;
+  top: 880px;
   width: 900px;
 }
 
+/* 各文書のフォント設定 */
+p {
+  color: #444;
+  font-size: 20px;
+}
+
+/* 見出しの設定 */
+#index {
+  margin:  0;
+  font-size:  24px;
+  position:  absolute;
+  top: 680px;
+  right: 200px;
+  color: #674196;
+  font-size: 70px;
+  font-weight:  normal;
+  display:  inline-block;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+/* 見出しの装飾 */
+#index:before {
+  content:  '';
+  background-color: #ffbf7f;
+  display:  block;
+  position:  absolute;
+  left: 510px;
+  height: 100px;
+  width: 100px;
+  border-radius:  50%;
+  top: 0px;
+  z-index:  -1;
+}
+
+/* 見出しの余白設定 */
+.head-set {
+  padding-bottom:  20px;
+}
+
+/* 研究題材名名拡大 */
 span {
   font-size: larger;
 }
 
+/*「Thema」の文字の詳細設定 */
 .thema {
   position: absolute ;
   font-weight: 200;
   font-size: 30px;
-  top: 730px;
+  top: 800px;
   left: 260px;
   line-height: 1.4;
   padding:0.25em 1em;
   display: inline-block;
 }
 
+/*「Thema」の文字の装飾 */
 .thema:before, .thema:after { 
   content:'';
   width: 20px;
@@ -112,14 +131,12 @@ span {
   position: absolute;
   display: inline-block;
 }
-
 .thema:before {
   border-left: solid 1px #ff5722;
   border-top: solid 1px #ff5722;
   top:0;
   left: 0;
 }
-
 .thema:after {
   border-right: solid 1px #ff5722;
   border-bottom: solid 1px #ff5722;
@@ -127,11 +144,9 @@ span {
   right: 0;
 }
 
-p {
-  color: #444;
-  font-size: 20px;
-}
 
+
+/* ハンバーガーメニューの位置設定 */
 #nav-toggle {
   position: fixed;
   top: 25px;
@@ -139,10 +154,13 @@ p {
   height: 32px;
   cursor: pointer;
 }
+/* ハンバーガーメニューの長さ設定 */
 #nav-toggle > div {
   position: relative;
   width: 36px;
 }
+
+/* ナビゲーションの設定 */
 #nav-toggle span {
   width: 100%;
   height: 2px;
@@ -152,6 +170,8 @@ p {
   position: absolute;
   transition: transform 0.6s ease-in-out, top 0.5s ease;
 }
+
+/* ハンバーガーメニューの各線分位置設定 */
 #nav-toggle span:nth-child(1) {
   top: 0;
 }
@@ -161,6 +181,8 @@ p {
 #nav-toggle span:nth-child(3) {
   top: 28px;
 }
+
+/* カーソルをハンバーガーメニューに置いた時の各線分位置設定 */
 #nav-toggle:hover span:nth-child(1) {
   top: 4px;
 }
@@ -168,6 +190,7 @@ p {
   top: 23px;
 }
 
+/* ハンバーガーメニュークリック時の設定 */
 .open #nav-toggle span {
   background: #fff;
 }
@@ -185,18 +208,14 @@ p {
   transform: rotate(-45deg);
 }
 
-/* z-index */
+/* ハンバーガーメニューを常にページの手前におく */
 #nav-toggle {
   z-index: 1000;
 }
 
-#container {
-  z-index: 900;
-}
-
+/* ナビゲーション設定 */
 #gloval-nav {
   background: #000;
-  color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -214,6 +233,7 @@ p {
   transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
+/* ナビゲーション内コンテンツ設定 */
 #gloval-nav a {
   display: block;
   color: #fff;
@@ -221,17 +241,23 @@ p {
   padding: 10px 0;
   transition: color 0.6s ease;
 }
-#gloval-nav a:hover {
-  color: #999;
-}
+
+
+
+/* リスト内の各項目の先頭に表示されるマーカーを消す */
 #gloval-nav ul {
   list-style: none;
 }
+
+/* リストの出現方法設定 */
 #gloval-nav ul li {
   opacity: 0;
   transform: translateX(200px);
   transition: transform 0.6s ease, opacity 0.2s ease;
 }
+
+/* リスト出現の遅延 */
+/* 各リストが順番に出現するようにしている */
 #gloval-nav ul li:nth-child(2) {
   transition-delay: 0.15s;
 }
@@ -251,6 +277,8 @@ p {
   transition-delay: 0.9s;
 }
 
+
+/* リストのアンダーバー設定(通常時には表示されない) */
 nav li::after {
   position: absolute;
   bottom: -4px;
@@ -263,20 +291,19 @@ nav li::after {
   transform-origin: right top;
   transition: transform .3s;
 }
+
+/* カーソルをナビゲーション内のリストに置いた時の設定 */
+/*  1.色変化 */
+#gloval-nav a:hover {
+  color: #999;
+}
+/*  2.アンダーバーの出現方法 */
 nav li:hover::after {
   transform-origin: left top;
   transform: scale(1, 1);
 }
 
-nav a {
-  display: inline-block;
-  padding: 10px;
-  color: #66cdaa;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-/* open */
+/* ナビゲーション開示時の総合設定*/
 .open {
   overflow: hidden;
 }
