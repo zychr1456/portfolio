@@ -13,6 +13,7 @@ body {
     animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
     font-family: 'Noto Serif JP', 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho',serif;
+    background-attachment: fixed;
 }
   
 @keyframes fadeIn {
@@ -28,9 +29,9 @@ body {
 /* 表題設定 */
 .head {
   color: #00552e;
-  font-size: 6vw;
+  font-size: 80px;
   position: absolute;
-  top: 2vw;
+  top: 10px;
   left: 15vw;
 }
 
@@ -39,40 +40,59 @@ body {
   font-family: 'Raleway', Arial, sans-serif;
   position: absolute;
   overflow: hidden;
-  top: 19vw;
+  top: 250px;
   left: 15%;
   margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
+  width: 22vw;
+  height: auto;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.2vw;
   background-color: #000000;
 }
 .pic2 {
   font-family: 'Raleway', Arial, sans-serif;
   position: absolute;
   overflow: hidden;
-  top: 19vw;
+  top: 250px;
   left: 39%;
   margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
+  width: 22vw;
+  height: auto;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.2vw;
   background-color: #000000;
 }
 .pic3 {
   font-family: 'Raleway', Arial, sans-serif;
   position: absolute;
   overflow: hidden;
-  top: 19vw;
+  top: 250px;
   left: 63%;
   margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
+  width: 22vw;
+  height: auto;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.2vw;
   background-color: #000000;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pic1 {
+   width: 230px;
+   font-size: 13px;
+  }
+  .pic2 {
+    width: 230px;
+    top: 400px;
+    font-size: 13px;
+    left: 32%;
+  }
+  .pic3 { 
+    width: 230px;
+    top: 550px;
+    font-size: 13px;
+    left: 50%;
+  }
 }
 
 /* 趣味の種類である３つの画像内の線分の出現を滑らかにする(通常時は非表示) */
@@ -212,9 +232,9 @@ body {
   width: 100vw;
   height: 800px;
   position: relative;
-  top: 85vw;
+  top: 1200px;
   color: #444;
-  font-size: 1.4vw;
+  font-size: 20px;
 }
 
 /*「Music」という見出しの設定 */
@@ -234,9 +254,9 @@ body {
   width: 100vw;
   height: 800px;
   color: #444;
-  font-size: 1.4vw;
+  font-size: 20px;
   position: relative;
-  top: 85vw;
+  top: 1300px;
 }
 
 /*「Video」という見出しの設定 */ 
@@ -255,9 +275,9 @@ body {
   width: 100vw;
   height: 500px;
   color: #444;
-  font-size: 1.4vw;
+  font-size: 20px;
   position: relative;
-  top: 85vw;
+  top: 1300px;
 }
 
 /*「Dog」という見出しの設定 */ 
@@ -287,19 +307,19 @@ body {
 
 /* 音楽活動についての文書の位置設定 */
 .doc1{
-  width: 950px;
+  width: 70vw;
   margin:  0 auto;
 }
 
 /* 映像制作についての文書の位置設定 */
 .doc2{
-  width: 950px;
+  width: 70vw;
   margin:  0 auto;
 }
 
 /* 愛犬についての文書の位置設定 */
 .doc3{
-  width: 950px;
+  width: 70vw;
   margin:  0 auto;
 }
 
@@ -360,8 +380,8 @@ body {
 }
 
 /* ツールチップ内文字設定 */
-.cp_cssslider .tooltip h3 {
-  color:#fff;
+.cp_cssslider .tooltip h5 {
+  color:#ffffff;
   padding:0 0 0 20px;
 }
 
@@ -480,6 +500,99 @@ video{
   width: 800px;
   height: auto;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 1240px) {
+  .cp_cssslider {
+    top: 750px;
+    left: 0;
+    margin-bottom: 70vw;
+  }
+  #topic1 {
+    top: 1650px;
+    height: 1400px;
+  }
+  #topic2 {
+    top: 1500px;
+    height: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #topic1 {
+    top: 1850px;
+  }
+  #topic2 {
+    top: 1750px;
+  }
+  #topic3 {
+    top: 1700px;
+  }
+  .charo {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .cp_cssslider {
+    top: 850px;
+  }
+  #topic1 {
+    top: 1750px;
+    height: 1200px;
+  }
+  #topic2 {
+    top: 1850px;
+    height: 1100px;
+  }
+  .charo {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .cp_cssslider {
+    top: 950px;
+  }
+  #topic1 {
+    top: 1900px;
+    height: 1300px;
+  }
+  #topic2 {
+    top: 2150px;
+    height: 1300px;
+  }
+  video {
+    width: 90vw;
+    height: auto;
+  }
+
+  .charo {
+    width: 90vw;
+  }
+
+}
+
+@media only screen and (max-width: 530px) {
+  .cp_cssslider {
+    top:  1000px;
+  }
+  #topic1 {
+    top: 1950px;
+    height: 1400px;
+  }
+  #topic2 {
+    top: 2100px;
+    height: 1300px;
+  }
+  video {
+    width: 90vw;
+    height: auto;
+  }
+
+  .charo {
+    width: 90vw;
+  }
 }
 
 /* ハンバーガーメニューの位置設定 */

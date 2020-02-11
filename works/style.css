@@ -13,6 +13,7 @@ body {
     animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
     font-family: 'Noto Serif JP', 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho',serif;
+    background-attachment: fixed;
   } 
 @keyframes fadeIn {
   0% {opacity: 0}
@@ -26,18 +27,19 @@ body {
 /* 表題設定 */
 .head {
   color: #00552e;
-  font-size: 6vw;
+  font-size: 80px;
   position: absolute;
-  top: 2vw;
+  top: 10px;
   left: 15vw;
 }
 
 /* 勉強風景画像の位置設定 */
 img {
   position: absolute;
-  top: 15vw;
-  left: 58vw;
+  top: 200px;
+  left: 60vw;
   width: 30%;
+  min-width: 370px;
   height: auto;
   z-index: -1;
 }
@@ -46,7 +48,7 @@ img {
 .doc1 {
   position: absolute;
   left: 15vw;
-  top: 20vw;
+  top: 270px;
   width: 40%;
 }
 
@@ -54,14 +56,14 @@ img {
 .doc2 {
   position: absolute;
   left: 15vw;
-  top: 37vw;
+  top: 530px;
   width: 70%;
 }
 
 /* 卒業研究内容説明の配置 */
 .doc3 {
   position: absolute;
-  top: 77vw;
+  top: 1050px;
   width: 60%;
   margin: 0 auto;
 }
@@ -69,7 +71,7 @@ img {
 /* 各文書のフォント設定 */
 p {
   color: #444;
-  font-size: 1.4vw;
+  font-size: 20px;
 }
 
 /* 見出しの設定 */
@@ -77,7 +79,7 @@ p {
   margin:  0;
   font-size:  4vw;
   position:  absolute;
-  top: 57vw;
+  top: 780px;
   right: 10vw;
   color: #674196;
   font-size: 70px;
@@ -86,6 +88,7 @@ p {
   padding-top: 40px;
   padding-left: 40px;
   padding-bottom: 20px;
+  text-align: right;
 }
 
 /* 見出しの装飾 */
@@ -94,7 +97,7 @@ p {
   background-color: #ffbf7f;
   display:  block;
   position:  absolute;
-  left: 510px;
+  left: 550px;
   height: 100px;
   width: 100px;
   border-radius:  50%;
@@ -104,7 +107,7 @@ p {
 
 /* 研究題材名名拡大 */
 span {
-  font-size: 2vw;
+  font-size: 30px;
 }
 
 /*「Thema」の文字の詳細設定 */
@@ -112,7 +115,7 @@ span {
   position: absolute ;
   font-weight: 200;
   font-size: 30px;
-  top: 68vw;
+  top: 930px;
   left: 17vw;
   line-height: 1.4;
   padding:0.25em 1em;
@@ -140,7 +143,49 @@ span {
   right: 0;
 }
 
+@media only screen and (max-width: 1370px) {
+  .doc1 {
+    width: 70%;
+  }
+  img {
+    top: 500px;
+    left: 15vw;
+  }
+  .doc2 {
+    top: 1050px;
+  }
+  #index {
+    top: 1300px;
+  }
+  .thema {
+    top: 1450px;
+  }
+  .doc3 {
+    top: 1570px;
+    width: 70%;
+  }
+}
 
+@media only screen and (max-width: 800px) {
+  img {
+    top: 580px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  img {
+    top: 620px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .thema {
+    top: 1550px;
+  }
+  .doc3 {
+    top: 1670px;
+  }
+}
 
 /* ハンバーガーメニューの位置設定 */
 #nav-toggle {

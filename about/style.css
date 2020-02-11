@@ -1,7 +1,7 @@
 /* 背景設定 */
 /* コンテンツをフィードインさせる */
 body {
-  background-color: #ececec;
+  background-color:  rgb(239, 240, 242);
   background-image: url("./desk.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,19 +28,20 @@ body {
 /* 表題設定 */
 .head {
   color: #00552e;
-  font-size: 6vw;
+  font-size: 80px;
   position: absolute;
-  top: 2vw;
+  top: 10px;
   left: 15vw;
 }
 
 /* プロフィール画像の位置設定 */
-.PR {
+.me {
   position: absolute;
   width: 30%;
+  min-width: 260px;
   height: auto;
   left: 20vw;
-  top: 20vw;
+  top: 250px;
 }
 
 /* 文書設定 */
@@ -49,7 +50,7 @@ p {
   font-size: 1.4vw;
   position: absolute;
   left: 55vw;
-  top: 33vw;
+  top: 350px;
   width: 35%;
 }
 
@@ -62,6 +63,21 @@ p {
 /* 氏名(漢字)サイズ設定 */
 .name2 {
   font-size: 2.5vw;
+}
+
+@media only screen and (max-width: 900px) {
+  p {
+    top: 570px;
+    left: 20vw;
+    font-size: 15px;
+    width: 70%;
+  }
+  .name1 {
+    font-size: 15px;
+  }
+  .name2 {
+    font-size: 30px;
+  }
 }
 
 /* ハンバーガーメニューの位置設定 */

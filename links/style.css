@@ -26,52 +26,71 @@ body {
 /* 表題設定 */
 .head {
   color: #00552e;
-  font-size: 6vw;
+  font-size: 80px;
   position: absolute;
-  top: 2vw;
+  top: 10px;
   left: 15vw;
 }
 
 /* 各種リンク位置設定 */
 .link1 {
     position: absolute;
-    top: 20vw;
+    top: 200px;
     left: 21vw;
 }
 .link2 {
     position: absolute;
-    top: 25vw;
+    top: 250px;
     left: 21vw;
 }
 .link3 {
     position: absolute;
-    top: 20vw;
+    top: 200px;
     left: 50vw;
 }
 .link4 {
     position: absolute;
-    top: 25vw;
+    top: 250px;
     left: 50vw;
 }
 .link5 {
     position: absolute;
-    top: 30vw;
+    top: 300px;
     left: 50vw;
 }
 .link6 {
     position: absolute;
-    top: 35vw;
+    top: 350px;
     left: 50vw;
 }
 .link7 {
     position: absolute;
-    top: 30vw;
+    top: 300px;
     left: 21vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  .link3 {
+    top: 350px;
+    left: 21vw;
+  }
+  .link4 {
+    top: 400px;
+    left: 21vw;
+  }
+  .link5 {
+    top: 450px;
+    left: 21vw;
+  }
+  .link6 {
+    top: 500px;
+    left: 21vw;
+  }
 }
 
 /* 各種リンク詳細設定 */
 .detail{
-  font-size: 1.6vw;
+  font-size: 20px;
 	padding: 0.1em 0.3em 0em 0.3em;
 	background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(255,152,0,1) 50%);
 	background-position: 0 0;
